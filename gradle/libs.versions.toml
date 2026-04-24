@@ -1,0 +1,16 @@
+[versions]
+aliucord = "2.7.0"
+aliucord-gradle = "2.3.0"
+android = "8.2.2"
+discord = "126021"
+ktlint = "1.3.1"
+ktlint-plugin = "12.1.1"
+
+[libraries]
+aliucord = { module = "com.aliucord:Aliucord", version.ref = "aliucord" }
+discord = { module = "com.discord:discord", version.ref = "discord" }
+
+[plugins]
+aliucord-plugin = { id = "com.aliucord.plugin", version.ref = "aliucord-gradle" }
+android-library = { id = "com.android.library", version.ref = "android" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint-plugin" }
